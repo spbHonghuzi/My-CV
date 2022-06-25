@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "2bc2ad03-3b2e-4980-a3c4-4f6a7d7732fe",
+		"name": "Yandex практика",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21392258"
+	},
+	"item": [
+		{
+			"name": "Погода",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "in",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "X-Yandex-API-Key",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "21c2477c-6a65-4134-882a-0773ea333819",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.weather.yandex.ru/v2/forecast?lat=59.938951&lon=30.315635&limit=4&hours=false&extra=false&lang=ru_RU",
+					"protocol": "https",
+					"host": [
+						"api",
+						"weather",
+						"yandex",
+						"ru"
+					],
+					"path": [
+						"v2",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "59.938951"
+						},
+						{
+							"key": "lon",
+							"value": "30.315635"
+						},
+						{
+							"key": "limit",
+							"value": "4"
+						},
+						{
+							"key": "hours",
+							"value": "false"
+						},
+						{
+							"key": "extra",
+							"value": "false"
+						},
+						{
+							"key": "lang",
+							"value": "ru_RU"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

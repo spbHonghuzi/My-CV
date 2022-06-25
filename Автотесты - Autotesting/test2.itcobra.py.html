@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>test2.itcobra.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #808080;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+test2.itcobra.py</font>
+</center></td></tr></table>
+<pre><span class="s0">from </span><span class="s1">selenium </span><span class="s0">import </span><span class="s1">webdriver</span>
+
+<span class="s1">driver = webdriver.Chrome()</span>
+<span class="s1">driver.get(</span><span class="s2">&quot;http://test2.itcobra.ru/&quot;</span><span class="s1">)</span>
+<span class="s3"># driver.get(&quot;http://test2.itcobra.ru/personal/&quot;)</span>
+<span class="s3"># driver.get(&quot;http://test2.itcobra.ru/auth/&quot;)</span>
+<span class="s1">driver.find_element_by_xpath(</span><span class="s2">&quot;/html/body/div[3]/div[3]/div[1]/div[3]/div[3]/div&quot;</span><span class="s1">).click()</span>
+<span class="s1">driver.implicitly_wait(</span><span class="s4">5</span><span class="s1">)</span>
+<span class="s1">driver.find_element_by_xpath(</span><span class="s2">&quot;/html/body/div[9]/div/div[2]/div/div/div[1]/div/div/form/div[1]/div/div/div/input&quot;</span><span class="s1">) \</span>
+    <span class="s1">.send_keys(</span><span class="s2">&quot;kst.scoobydoo@gmail.com&quot;</span><span class="s1">)</span>
+<span class="s1">driver.find_element_by_name(</span><span class="s2">&quot;USER_PASSWORD&quot;</span><span class="s1">).send_keys(</span><span class="s2">&quot;fuzzyA55&quot;</span><span class="s1">)</span>
+<span class="s1">driver.find_element_by_name(</span><span class="s2">&quot;Login&quot;</span><span class="s1">).click()</span>
+<span class="s1">driver.implicitly_wait(</span><span class="s4">10</span><span class="s1">)</span>
+<span class="s1">driver.find_element_by_xpath(</span><span class="s2">&quot;/html/body/div[3]/div[3]/div[1]/div[3]/div[3]/div&quot;</span><span class="s1">).click()</span>
+<span class="s1">driver.find_element_by_xpath(</span><span class="s2">&quot;/html/body/div[3]/div[5]/div[2]/div[2]/ul/li[10]/a/span&quot;</span><span class="s1">).click()</span>
+<span class="s1">driver.quit()</span>
+</pre>
+</body>
+</html>
